@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    *{
+      font-family: consolas;
+      
+    }
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      -ms-overflow-style: none;
+      
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+    .nav-oznacen{
+      background-color: #04aa6d;
+      border-radius: 25px 25px 25px 25px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .container{
+      top: 5vh;
+      display: flex;
+      position: relative;
+      justify-content: space-evenly;
+    }
+    .container2{
+      top: 5vh;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://image.dnevnik.hr/media/images/920x695/Jul2019/61721211-medjimurje.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .lista {
+      display: flex;
+      justify-content: space-around;
+      align-items:start;
+      padding: 40px 80px;
+    }
+
+    .lista .stupac {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .lista .stupac i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .lista .stupac .stupac-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .lista .stupac .stupac-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .zupan {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .zupan img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .zupan-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .zupan-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;     
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      border-radius: 15px 15px 15px 15px;
+    }
+      
+    .dropdown {
+       position: relative;
+       display: inline-block;
+    }
+      
+    .dropdown-content {
+       display: none;
+       position: absolute;
+       right: 0;
+       min-width: 160px;
+       background-color: rgb(228, 228, 228);
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;   
+       max-height: 30vh;
+       overflow-y: scroll;
+    }
+      
+    .dropdown-content div {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+      
+    .dropdown-content div:hover {background-color: #f1f1f1;}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    
+    #zastava_Left, #zastava_Right {
+      object-fit: cover;
+      width: 25vw;
+      height: 30vh;
+    }
+    #grb_Left, #grb_Right {
+      object-fit: cover;
+      width: 10vw;
+      height: 10vh;
+    }
+
+    th, td{
+      padding: 5px;
+      text-align: center;
+    }
+
+    .table1{
+      border-radius: 10px 10px 10px 10px;    
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);  
+    }
+    .table2{
+      border-radius: 10px 10px 10px 10px;        
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      background-image: linear-gradient(120deg, #96e6a1 0%, #d4fc79 100%);    
+    }
+
+    footer{
+      height: 10vh;
+    }
+    .container3{
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+    .ispis{
+      position: absolute;
+      left: 25%;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .ispis h1{
+      align-self: center;
+    }
